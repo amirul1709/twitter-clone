@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { BiHomeCircle } from "react-icons/bi";
-import { BiHash } from "react-icons/bi";
-import { BiBell } from "react-icons/bi";
-import { BiEnvelope } from "react-icons/bi";
-import { BiBookBookmark } from "react-icons/bi";
-import { BiUser } from "react-icons/bi";
+import {
+  BiHomeCircle,
+  BiHash,
+  BiBell,
+  BiEnvelope,
+  BiBookBookmark,
+  BiUser,
+} from "react-icons/bi";
 
 const navigation_items = [
   {
