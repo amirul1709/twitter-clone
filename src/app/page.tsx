@@ -9,6 +9,7 @@ import {
   BiUser,
 } from "react-icons/bi";
 import { GrTwitter } from "react-icons/gr";
+import { BsThreeDots } from "react-icons/bs";
 
 const navigation_items = [
   {
@@ -41,8 +42,8 @@ export default function Home() {
   return (
     <div className="w-full h-full flex justify-center items-center relative">
       <div className="max-w-screen-xl w-full h-full flex relative">
-        <section className="fixed w-[275px] flex flex-col items-stretch h-full space-y-4">
-          <div className="flex flex-col items-stretch h-full space-y-4 my-4">
+        <section className="fixed w-[275px] flex flex-col items-stretch h-screen">
+          <div className="flex flex-col items-stretch h-full space-y-4 mt-4">
             <Link className="p-2 text-2xl py-2 px-6" href={"/"}>
               <GrTwitter />
             </Link>
@@ -62,7 +63,18 @@ export default function Home() {
               Tweet
             </button>
           </div>
-          <div>at the bottom</div>
+          <button className="rounded-full flex items-center space-x-2 m-4 p-4 bg-transparent text-center hover:bg-white/10 transition duration-200 w-full justify-between">
+            <div className="flex items-center space-x-2">
+              <div className="rounded-full bg-slate-400 w-12 h-12"></div>
+              <div className="text-left text-sm">
+                <div className="font-semibold">Amirul Hossain</div>
+                <div>@amirul</div>
+              </div>
+            </div>
+            <div>
+              <BsThreeDots />
+            </div>
+          </button>
         </section>
         <main>home</main>
         <section>right sidebar</section>
