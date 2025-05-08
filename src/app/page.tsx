@@ -8,6 +8,7 @@ import {
   BiBookBookmark,
   BiUser,
 } from "react-icons/bi";
+import { GrTwitter } from "react-icons/gr";
 
 const navigation_items = [
   {
@@ -39,12 +40,15 @@ const navigation_items = [
 export default function Home() {
   return (
     <div className="w-full h-full flex justify-center items-center relative">
-      <div className="max-w-screen-lg w-full h-full flex relative">
-        <section className="fixed w-72 flex flex-col">
+      <div className="max-w-screen-xl w-full h-full flex relative">
+        <section className="fixed w-72 flex flex-col space-y-4 my-4">
+          <Link className="p-2 text-2xl" href={"/"}>
+            <GrTwitter />
+          </Link>
           {navigation_items.map((item) => (
             <Link
               key={item.title}
-              className="bg-white/50 flex items-center justify-center space-x-2 rounded-3xl p-4"
+              className="hover:bg-white/10 transition duration-200 flex items-center justify-start w-fit text-2xl space-x-4 rounded-3xl p-2"
               href={`/${item.title.toLowerCase()}`}
             >
               <div>
