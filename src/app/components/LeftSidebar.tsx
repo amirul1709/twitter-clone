@@ -56,11 +56,11 @@ export default function LeftSidebar() {
             <div>{item.title}</div>
           </Link>
         ))}
-        <button className="bg-primary hover:bg-primary/50 transition duration-200 w-full rounded-full m-4 p-4 text-2xl text-center">
+        <button className="bg-primary hover:bg-primary/50 transition duration-200 w-full rounded-full p-4 text-2xl text-center">
           Tweet
         </button>
       </div>
-      <button className="rounded-full flex items-center space-x-2 m-4 p-4 bg-transparent text-center hover:bg-white/10 transition duration-200 w-full justify-between">
+      <button className="rounded-full flex items-center space-x-2 p-4 bg-transparent text-center hover:bg-white/10 transition duration-200 w-full justify-between">
         <div className="flex items-center space-x-2">
           <div className="rounded-full bg-slate-400 w-12 h-12"></div>
           <div className="text-left text-sm">
