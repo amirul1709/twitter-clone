@@ -45,11 +45,23 @@ export default function Home() {
             <div>
               {Array.from({ length: 5 }).map((_, i) => (
                 <div
-                  className="hover:bg-white/10 transition duration-200 cursor-pointer p-4 last:rounded-b-xl"
+                  className="flex items-center justify-between hover:bg-white/10 transition duration-200 cursor-pointer p-4 last:rounded-b-xl"
                   key={i}
                 >
-                  <div className="font-bold text-lg">#trending {i}</div>
-                  <div className="text-sm text-neutral-400">6.9k Tweets</div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-10 h-10 bg-neutral-300 rounded-full"></div>
+                    <div className="flex flex-col">
+                      <div className="font-bold text-white">Other User</div>
+                      <div className="text-sm text-neutral-400">
+                        @otheruser222
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button className="rounded-full px-6 py-2 bg-white text-neutral-900">
+                      Follow
+                    </button>
+                  </div>
                 </div>
               ))}
             </div>
