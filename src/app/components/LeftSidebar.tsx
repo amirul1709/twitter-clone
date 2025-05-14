@@ -39,7 +39,7 @@ const navigation_items = [
 
 export default function LeftSidebar() {
   return (
-    <section className="fixed w-[275px] flex flex-col items-stretch h-screen">
+    <section className="w-[25%] flex flex-col items-stretch h-screen px-4">
       <div className="flex flex-col items-stretch h-full space-y-4 mt-4">
         <Link className="p-2 text-2xl py-2 px-6" href={"/"}>
           <GrTwitter />
