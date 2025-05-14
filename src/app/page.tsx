@@ -1,6 +1,9 @@
 import React from "react";
 import LeftSidebar from "./components/LeftSidebar";
-import { BsDot } from "react-icons/bs";
+import { BsDot, BsThreeDots } from "react-icons/bs";
+import { BiComment, BiHeart, BiShare } from "react-icons/bi";
+import { AiOutlineRetweet } from "react-icons/ai";
+import { IoMdStats } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -8,7 +11,9 @@ export default function Home() {
       <div className="max-w-screen-xl w-full h-full flex relative">
         <LeftSidebar />
         <main className="ml-[285px] flex w-[600px] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600 px-6 py-2">
-          <h1 className="text-xl font-bold my-2">Home</h1>
+          <h1 className="text-xl font-bold p-4 backdrop-blur bg-black/10 sticky top-0">
+            Home
+          </h1>
           <div className="border-t-[0.5px] border-b-[0.5px] border-gray-600 flex items-stretch py-4 space-x-2 relative">
             <div className="w-11 h-11 bg-slate-400 rounded-full flex-none"></div>
             <div className="flex flex-col w-full h-full">
@@ -38,29 +43,44 @@ export default function Home() {
                 <div>
                   <div className="w-10 h-10 bg-slate-200 rounded-full"></div>
                 </div>
-                <div className="flex flex-col space-y-4">
-                  <div className="flex items-center space-x-1">
-                    <div className="font-bold">Amirul Hossain</div>
-                    <div>@amirul1709</div>
-                    <div>
-                      <BsDot />
+                <div className="flex flex-col">
+                  <div className="flex items-center w-full justify-between">
+                    <div className="flex items-center space-x-1 w-full">
+                      <div className="font-bold">Master Chief</div>
+                      <div className="text-gray-400">@Chief</div>
+                      <div className="text-gray-400">
+                        <BsDot />
+                      </div>
+                      <div className="text-gray-400">1 hour ago</div>
                     </div>
-                    <div>1 hour ago</div>
+                    <div>
+                      <BsThreeDots />
+                    </div>
                   </div>
-                  <div className="text-white text-sm">
+                  <div className="text-white text-base">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sapiente atque sunt ipsum quia veritatis. Deleniti nisi
                     inventore dolorum quibusdam, ut, dignissimos impedit ullam
                     facilis sequi reprehenderit libero. Voluptatibus, reiciendis
                     eligendi?
                   </div>
-                  <div className="bg-slate-400 aspect-square w-full h-96 rounded-2xl"></div>
-                  <div className="flex items-center space-x-2 w-full">
-                    <div>C</div>
-                    <div>R</div>
-                    <div>L</div>
-                    <div>S</div>
-                    <div>SH</div>
+                  <div className="bg-slate-400 aspect-square w-full h-96 rounded-2xl mt-2"></div>
+                  <div className="flex items-center justify-between space-x-2 w-full mt-4">
+                    <div className="rounded-full hover:bg-white/10 transition duration-200 p-2 cursor-pointer">
+                      <BiComment />
+                    </div>
+                    <div className="rounded-full hover:bg-white/10 transition duration-200 p-2 cursor-pointer">
+                      <AiOutlineRetweet />
+                    </div>
+                    <div className="rounded-full hover:bg-white/10 transition duration-200 p-2 cursor-pointer">
+                      <BiHeart />
+                    </div>
+                    <div className="rounded-full hover:bg-white/10 transition duration-200 p-2 cursor-pointer">
+                      <IoMdStats />
+                    </div>
+                    <div className="rounded-full hover:bg-white/10 transition duration-200 p-2 cursor-pointer">
+                      <BiShare />
+                    </div>
                   </div>
                 </div>
               </div>
