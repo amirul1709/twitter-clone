@@ -9,7 +9,7 @@ export default function Home() {
       <div className="max-w-[80vw] w-full h-full flex relative">
         <LeftSidebar />
         <Main />
-        <section className="sticky top-0 w-[30%] flex flex-col items-stretch h-screen px-4">
+        <section className="sticky top-0 overflow-scroll w-[30%] flex flex-col items-stretch h-screen px-4">
           <div className="mt-4">
             <div className="relative w-full h-full">
               <input
@@ -26,7 +26,34 @@ export default function Home() {
               </label>
             </div>
           </div>
-          <div></div>
+          <div className="flex flex-col rounded-xl bg-neutral-900 my-4">
+            <h3 className="font-bold text-xl p-4">{`What's happening`}</h3>
+            <div>
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div
+                  className="hover:bg-white/10 transition duration-200 cursor-pointer p-4 last:rounded-b-xl"
+                  key={i}
+                >
+                  <div className="font-bold text-lg">#trending {i}</div>
+                  <div className="text-sm text-neutral-400">6.9k Tweets</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col rounded-xl bg-neutral-900 my-4">
+            <h3 className="font-bold text-xl p-4">Who to follow</h3>
+            <div>
+              {Array.from({ length: 5 }).map((_, i) => (
+                <div
+                  className="hover:bg-white/10 transition duration-200 cursor-pointer p-4 last:rounded-b-xl"
+                  key={i}
+                >
+                  <div className="font-bold text-lg">#trending {i}</div>
+                  <div className="text-sm text-neutral-400">6.9k Tweets</div>
+                </div>
+              ))}
+            </div>
+          </div>
           <div></div>
         </section>
       </div>
