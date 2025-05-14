@@ -14,7 +14,7 @@ export default function Main() {
         <div className="flex flex-col w-full h-full">
           <div className="border-gray-700">
             <input
-              className="w-full h-full text-2xl placeholder:text-gray-600 border-b-[0.5px] bg-transparent outline-none border-none"
+              className="w-full h-full text-xl placeholder:text-gray-600 border-b-[0.5px] bg-transparent outline-none border-none"
               type="text"
               placeholder="What's happening?"
             />
@@ -22,7 +22,7 @@ export default function Main() {
           <div className="w-full justify-between items-center flex">
             <div></div>
             <div className="w-full max-w-[100px]">
-              <button className="bg-primary hover:bg-primary/50 transition duration-200 w-full rounded-full px-4 py-2 text-lg font-bold text-center">
+              <button className="bg-primary hover:bg-primary/50 transition duration-200 w-full rounded-full px-4 py-2 text-lg font-bold text-center cursor-pointer">
                 Tweet
               </button>
             </div>

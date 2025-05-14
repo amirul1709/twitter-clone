@@ -6,10 +6,10 @@ import { BsSearch } from "react-icons/bs";
 export default function Home() {
   return (
     <div className="w-full h-full flex justify-center items-center relative">
-      <div className="max-w-[80vw] w-full h-full flex relative border-4">
+      <div className="max-w-[80vw] w-full h-full flex relative">
         <LeftSidebar />
         <Main />
-        <section className="w-[30%] flex flex-col items-stretch h-screen px-4">
+        <section className="sticky top-0 w-[30%] flex flex-col items-stretch h-screen px-4">
           <div>
             <div className="relative w-full h-full">
               <label

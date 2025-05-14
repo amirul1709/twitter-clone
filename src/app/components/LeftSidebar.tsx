@@ -39,7 +39,7 @@ const navigation_items = [
 
 export default function LeftSidebar() {
   return (
-    <section className="w-[25%] flex flex-col items-stretch h-screen px-4">
+    <section className="sticky top-0 w-[25%] flex flex-col items-stretch h-screen px-4">
       <div className="flex flex-col items-stretch h-full space-y-4 mt-4">
         <Link className="p-2 text-2xl py-2 px-6" href={"/"}>
           <GrTwitter />
@@ -56,7 +56,7 @@ export default function LeftSidebar() {
             <div>{item.title}</div>
           </Link>
         ))}
-        <button className="bg-primary hover:bg-primary/50 transition duration-200 w-full rounded-full p-4 text-2xl text-center">
+        <button className="bg-primary hover:bg-primary/50 transition duration-200 w-full rounded-full p-4 text-2xl text-center cursor-pointer">
           Tweet
         </button>
       </div>
